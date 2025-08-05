@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punto 25 - Menú</title>
+  <style>
+    /* --- Estilos base --- */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: #ff6b35;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background: #ff6b35;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Sección del menú --- */
+    .menu-section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .menu-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ff6b35;
+      font-size: 2em;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .menu-item .info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .menu-item h3 {
+      margin: 0;
+      color: #ff6b35;
+      font-size: 1.3em;
+    }
+
+    .menu-item p {
+      margin: 5px 0 0;
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ff6b35;
+      color: white;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍔 Punto 25</h1>
+    <p>¡Bienvenido a nuestra lonchería!</p>
+  </header>
+
+  <nav>
+    <a href="#hamburguesas">Hamburguesas</a>
+    <a href="#papas">Papas Fritas</a>
+    <a href="#boneless">Boneless</a>
+    <a href="#tortas">Tortas</a>
+  </nav>
+
+  <!-- Hamburguesas -->
+  <section id="hamburguesas" class="menu-section">
+    <h2>🍔 Hamburguesas</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?burger" alt="Hamburguesa Clásica">
+        <div class="info">
+          <h3>Hamburguesa Clásica</h3>
+          <p>Pan artesanal, carne 100% res, lechuga y jitomate.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?cheeseburger" alt="Hamburguesa con Queso">
+        <div class="info">
+          <h3>Hamburguesa con Queso</h3>
+          <p>La favorita de todos, con queso derretido y salsas especiales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Papas Fritas -->
+  <section id="papas" class="menu-section">
+    <h2>🍟 Papas Fritas</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?fries" alt="Papas Clásicas">
+        <div class="info">
+          <h3>Papas Clásicas</h3>
+          <p>Crujientes y doradas, con un toque de sal.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?loaded-fries" alt="Papas con Queso">
+        <div class="info">
+          <h3>Papas con Queso</h3>
+          <p>Cubiertas de queso cheddar y tocino.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boneless -->
+  <section id="boneless" class="menu-section">
+    <h2>🍗 Boneless</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?chicken-wings" alt="Boneless BBQ">
+        <div class="info">
+          <h3>Boneless BBQ</h3>
+          <p>Jugosos trozos de pollo bañados en salsa BBQ.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?spicy-chicken" alt="Boneless Picantes">
+        <div class="info">
+          <h3>Boneless Picantes</h3>
+          <p>Perfectos para los amantes del picante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tortas -->
+  <section id="tortas" class="menu-section">
+    <h2>🥪 Tortas</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?sandwich" alt="Torta de Jamón">
+        <div class="info">
+          <h3>Torta de Jamón</h3>
+          <p>Clásica, con jitomate, aguacate y mayonesa.</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?mexican-sandwich" alt="Torta de Milanesa">
+        <div class="info">
+          <h3>Torta de Milanesa</h3>
+          <p>Empanizada, crujiente y llena de sabor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>📍 Visítanos en Calle Principal #25</p>
+    <p>📞 Tel: 555-123-4567</p>
+    <p>&copy; 2025 Punto 25 - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
